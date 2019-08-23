@@ -12,6 +12,11 @@ const load = (req,res,next) => {
   next();
 };
 
+/**
+ *
+ *
+ * @returns
+ */
 const list = () => {
   return readdir(modelsFolder)
     .then(contents =>
